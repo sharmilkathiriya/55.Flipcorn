@@ -137,7 +137,6 @@ const Dashboard = () => {
             <Box>
                 <Grid container>
                     {sliderImage.slice(0, sliderImage.length / 2)?.map((value, index) => {
-                        console.log("value", value)
                         return index < 3 && (<>
                             <Grid item xs={6} sm={3} sx={{p: 0.6}} key={index}>
                                 <SectionProduct label={value.name} off={value.offer} img={value.image || defaultImg}/>
