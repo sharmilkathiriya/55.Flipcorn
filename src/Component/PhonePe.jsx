@@ -14,8 +14,8 @@ const PhonePe = ({userData}) => {
         amount: Number(userData.productData.price - userData.productData.mrp),
         muid: 'nuid-909090',
     });
-    console.log("userData", Number(userData.productData.price - userData.productData.mrp))
-    const navigate = useNavigate();
+
+   const navigate = useNavigate();
 
     const makePayment = async () => {
         const transactionId = 'Tr-' + uuidv4().toString(36).slice(-6);
@@ -45,18 +45,15 @@ const PhonePe = ({userData}) => {
         };
 
         const dataPayload = JSON.stringify(payload);
-        console.log(dataPayload);
+
 
         const dataBase64 = btoa(unescape(encodeURIComponent(dataPayload)));
-        console.log('dataBase64', dataBase64);
-
 
         const fullURL =
             dataBase64 + "/pg/v1/pay" + '96434309-7796-489d-8924-ab56988a6076';
         const dataSha256 = sha256(fullURL);
 
         const checksum = dataSha256 + "###" + 1;
-        console.log("c====", checksum);
 
 
         // const dataPayload = JSON.stringify(payload);
@@ -82,8 +79,8 @@ const PhonePe = ({userData}) => {
         );
 
         console.log("response", response)
-        navigate('/')
-        // window.location = response.data.data.instrumentResponse.redirectInfo.url
+        // navigate('/')
+        window.location = response.data.data.instrumentResponse.redirectInfo.url
 
         // try {
         //     const response = await axios.post(

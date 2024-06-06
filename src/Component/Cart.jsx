@@ -159,22 +159,22 @@ const Cart = () => {
                     </Stepper>
                 </Box>
                 {stepperValue == 0 && <>
-                    <Box sx={newStyles.cartField}>
+                    <Box sx={{...newStyles.cartField,m:1}}>
                         <ValueField error={errors.name} helperText={errors.name} fullWidth name='name' label='Full Name'
                                     value={userData.userData.name} onChange={addUserValue}/>
                     </Box>
-                    <Box sx={newStyles.cartField}>
+                    <Box sx={{...newStyles.cartField,m:1}}>
                         <ValueField inputProps={{maxLength: 10}} error={errors.number} helperText={errors.number} name='number' label='Number'
                                     value={userData.userData.number} onChange={addUserValue}/>
                     </Box>
-                    <Box sx={newStyles.cartField}>
+                    <Box sx={{...newStyles.cartField,m:1}}>
                         <ValueField error={errors.city} helperText={errors.city} name='city' label='City' value={userData.userData.city}
                                     sx={{mr: 1}}
                                     onChange={addUserValue}/>
                         <ValueField inputProps={{maxLength: 6}} error={errors.pincode} helperText={errors.pincode} name='pincode' label='Pincode'
                                     value={userData.userData.pincode} onChange={addUserValue}/>
                     </Box>
-                    <Box sx={newStyles.cartField}>
+                    <Box sx={{...newStyles.cartField,m:1}}>
                         <FormControl fullWidth error={Boolean(errors.state)}>
                             <InputLabel id="demo-simple-select-label">State</InputLabel>
                             <Select

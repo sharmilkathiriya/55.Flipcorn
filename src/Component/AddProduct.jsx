@@ -182,9 +182,11 @@ const AddProduct = () => {
     const addNewBanner = () => {
         navigate(`/addBanner`);
     }
+    const logout = () => {
+        localStorage.removeItem('adminUser')
+        navigate(`/login`);
+    }
 
-
-    console.log("allProduct", allProduct)
     return (
         <div>
             <Typography sx={newStyles.addProductTitle}>
@@ -253,6 +255,9 @@ const AddProduct = () => {
                     </Button> &nbsp;
                     <Button variant="contained" size="small" onClick={addNewBanner}>
                         Add Banner
+                    </Button>&nbsp;
+                    <Button variant="contained" size="small" onClick={logout}>
+                        Logout
                     </Button>
                 </Box>
             </Box>

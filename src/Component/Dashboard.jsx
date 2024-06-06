@@ -235,7 +235,7 @@ const Dashboard = () => {
                 <Grid container>
                     {productData?.map((value, index) => {
                         return (<>
-                            <Grid item xs={6} sm={6} key={index}>
+                            <Grid item xs={6} sm={6} key={index} sx={newStyles.vCardBox}>
                                 <ProductBox
                                     onClick={() => addCart(value)}
                                     productImg={value.image || defaultImg}

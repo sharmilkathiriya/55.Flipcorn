@@ -9,11 +9,11 @@ const newStyles = {
     badgePosition: {vertical: 'top', horizontal: 'right'},
     sliderBox: {position: 'absolute', bottom: '0px', left: '0px'},
     headerCartBadge: {border: '2px solid white', backgroundColor: "red", borderRadius: '25px', fontSize: '12px', padding: '0px 2px', color: 'white'},
-    cartIcon: {color: 'white'},
+    cartIcon: {color: 'white',cursor:'pointer'},
     subProductImg: {padding: '3px', width: '-webkit-fill-available'},
     subProBox: {cursor: 'pointer', width: '100px', textAlign: 'center', borderRadius: '10px', m: 1},
     // Start ProductBox Style
-    proBox: {border: '1px solid #f0f0f0', p: 2, backgroundColor: 'white'},
+    proBox: {},
     sliderProBox: {border: '1px solid #f0f0f0', p: 1, backgroundColor: 'white'},
     proImgBox: {display: 'flex', justifyContent: 'center', cursor: 'pointer'},
     proImg: {maxWidth: '110px', maxHeight: '110px'},

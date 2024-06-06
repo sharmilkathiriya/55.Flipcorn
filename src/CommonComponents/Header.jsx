@@ -28,7 +28,7 @@ const Header = () => {
                     <Stack direction="row">
                         <Badge overlap="circular" anchorOrigin={newStyles.badgePosition}
                                badgeContent={<div style={newStyles.headerCartBadge}>1</div>}>
-                            <ShoppingCartRoundedIcon sx={newStyles.cartIcon}/>
+                            <ShoppingCartRoundedIcon sx={newStyles.cartIcon} onClick={() => navigate('/login')}/>
                         </Badge>
                     </Stack>
                 </Box>

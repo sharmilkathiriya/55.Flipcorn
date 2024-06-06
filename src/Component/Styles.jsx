@@ -34,6 +34,7 @@ const newStyles = {
         pb: 1, pt: 1, mt: 2, mb: 2, backgroundColor: "#f0eff4",
         boxShadow: 'rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px'
     },
+    vCardBox:{border: '1px solid #f0f0f0', p: 2, backgroundColor: 'white'},
     // End Dashboard Style
 
     // Start Product Style
@@ -128,7 +129,7 @@ loginBtn:{ display: 'flex', mt: 4, justifyContent: 'center' },
         display: 'flex',
         justifyContent: 'center'
     },
-    cartField:{p: 1, maxWidth: '50%'}
+    cartField:{p: 1, maxWidth: '50%',m:1}
 };
 export default newStyles;
 
